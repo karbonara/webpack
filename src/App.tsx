@@ -1,8 +1,8 @@
-import './style.scss';
+import classes from './style.module.scss';
 
 const App = () => {
   return (
-    <div>App</div>
+    <div className={classes.text}>App</div>
   )
 };
 
