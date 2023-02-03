@@ -1,7 +1,7 @@
 import { Routes, Route, Link } from 'react-router-dom';
 import classes from './style.module.scss';
 import Home from './pages/Home';
-import About from './pages/About';
+import { AboutAsync } from './pages/About/About.async';
 
 const App = () => {
   return (
@@ -11,7 +11,7 @@ const App = () => {
       <Link to={'about'}>about</Link>
       <Routes>
         <Route path="/home" element={<Home />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/about" element={<AboutAsync />} />
       </Routes>
     </div>
   )
