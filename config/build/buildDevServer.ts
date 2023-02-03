@@ -5,5 +5,7 @@ export const buildDevServer = (options: BuildOptions): DevServerConfiguration =>
   return {
     port: options.port,
     open: true,
+    // Нужно для SPA приложений, при перезагрузке страницы будет корректно отображаться страница
+    historyApiFallback: true,
   };
 };
